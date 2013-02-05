@@ -19,7 +19,7 @@
 		0F9A4A5C16B31F9C002F5DFD /* CDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A4A5B16B31F9C002F5DFD /* CDViewController.m */; };
 		0F9A4A5F16B31F9C002F5DFD /* CDViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F9A4A5D16B31F9C002F5DFD /* CDViewController_iPhone.xib */; };
 		0F9A4A6216B31F9C002F5DFD /* CDViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F9A4A6016B31F9C002F5DFD /* CDViewController_iPad.xib */; };
-		0F9A4A6A16B5ABC2002F5DFD /* CDColorPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A4A6916B5ABC2002F5DFD /* CDColorPicker.m */; };
+		A55DA43016C1869D00B67EB0 /* CDColorPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = A55DA42F16C1869D00B67EB0 /* CDColorPicker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +40,8 @@
 		0F9A4A5B16B31F9C002F5DFD /* CDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDViewController.m; sourceTree = "<group>"; };
 		0F9A4A5E16B31F9C002F5DFD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CDViewController_iPhone.xib; sourceTree = "<group>"; };
 		0F9A4A6116B31F9C002F5DFD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CDViewController_iPad.xib; sourceTree = "<group>"; };
-		0F9A4A6816B5ABC2002F5DFD /* CDColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDColorPicker.h; sourceTree = "<group>"; };
-		0F9A4A6916B5ABC2002F5DFD /* CDColorPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDColorPicker.m; sourceTree = "<group>"; };
+		A55DA42E16C1869D00B67EB0 /* CDColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDColorPicker.h; path = Vendor/CDColorPicker/CDColorPicker.h; sourceTree = SOURCE_ROOT; };
+		A55DA42F16C1869D00B67EB0 /* CDColorPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDColorPicker.m; path = Vendor/CDColorPicker/CDColorPicker.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +61,7 @@
 		0F9A4A3316B31F9C002F5DFD = {
 			isa = PBXGroup;
 			children = (
+				A55DA43116C186CF00B67EB0 /* Vendor */,
 				0F9A4A4816B31F9C002F5DFD /* CDColorPickerDemo */,
 				0F9A4A4116B31F9C002F5DFD /* Frameworks */,
 				0F9A4A3F16B31F9C002F5DFD /* Products */,
@@ -88,8 +89,6 @@
 		0F9A4A4816B31F9C002F5DFD /* CDColorPickerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				0F9A4A6816B5ABC2002F5DFD /* CDColorPicker.h */,
-				0F9A4A6916B5ABC2002F5DFD /* CDColorPicker.m */,
 				0F9A4A5116B31F9C002F5DFD /* CDAppDelegate.h */,
 				0F9A4A5216B31F9C002F5DFD /* CDAppDelegate.m */,
 				0F9A4A5A16B31F9C002F5DFD /* CDViewController.h */,
@@ -113,6 +112,24 @@
 				0F9A4A5816B31F9C002F5DFD /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A55DA43116C186CF00B67EB0 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				A55DA43216C186D700B67EB0 /* CDColorPicker */,
+			);
+			name = Vendor;
+			path = CDColorPickerDemo;
+			sourceTree = "<group>";
+		};
+		A55DA43216C186D700B67EB0 /* CDColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				A55DA42E16C1869D00B67EB0 /* CDColorPicker.h */,
+				A55DA42F16C1869D00B67EB0 /* CDColorPicker.m */,
+			);
+			name = CDColorPicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,7 +203,7 @@
 				0F9A4A4F16B31F9C002F5DFD /* main.m in Sources */,
 				0F9A4A5316B31F9C002F5DFD /* CDAppDelegate.m in Sources */,
 				0F9A4A5C16B31F9C002F5DFD /* CDViewController.m in Sources */,
-				0F9A4A6A16B5ABC2002F5DFD /* CDColorPicker.m in Sources */,
+				A55DA43016C1869D00B67EB0 /* CDColorPicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +328,7 @@
 				0F9A4A6716B31F9C002F5DFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
